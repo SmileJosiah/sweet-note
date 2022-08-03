@@ -136,3 +136,42 @@
 
 3. 测试结果
 
+### 垂直分库
+
+### 垂直分表
+
+### 公共表
+
+1. 在三个数据库中都创建一张数据字典表
+   * 存储固定数据的表，表数据结构很少发生变化，查询时经常进行关联
+   * 在每个数据库中创建出相同结构的公共表
+2. 在项目配置文件`application.properties`中进行公共表配置
+3. 编写测试代码
+
+### 读写分离操作
+
+1. 读写分离的概念
+   * 读写分离原理
+2. MySQL配置读写分离
+   * 
+3. Sharding-JDBC操作读写分离的数据库
+
+## Sharding-Proxy
+
+>定位为透明的数据库代理端，提供了封装数据库二进制协议，用于完成对异构语言的支持。目前提供MySDQL/PostgreSQL版本，它可以使用任何兼容MySQL/PostgreSQL协议的访问客户端（如：MySQL Command Client，MySQL WorkBeanch）
+
+Sharding-Proxy 独立应用，使用安装服务，进行分库分表或者读写分离配置，启动使用
+
+###  分表配置
+
+1. 
+2. 进入conf目录，修改`config-sharding.xml`文件
+3. 启动 Sharding-Proxy服务
+4. 连接Sharding-Proxy服务
+
+### 分库配置
+
+### 读写分离配置
+
+
+
